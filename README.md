@@ -48,6 +48,6 @@ And now you can import **Tikkie.postman_environment.json** and **Tikkie.postman_
 
 ### 3- How to DESTROY the AWS stack
 * Make sure you are under **infra-ts** folder or change directory to **infra-ts**
-* Give execute permission to `**`chmod 777 destroy.sh`**`
+* Give execute permission to `chmod 777 destroy.sh`
 * Run the next command in your terminal `./destroy.sh`
 
