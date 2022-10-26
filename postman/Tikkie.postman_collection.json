@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "fb2ce38a-b488-4999-86cf-e2d463ae878a",
+		"name": "Tikkie",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7981089"
+	},
+	"item": [
+		{
+			"name": "Assignment",
+			"item": [
+				{
+					"name": "Create New Person",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstname\": \"Mohamed\",\n    \"lastname\": \"Ibrahim\",\n    \"phoneNumber\": \"+201090600012\",\n    \"address\": {\n        \"country\": \"Egypt\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{tikkie-base-create-url}}/person",
+							"host": [
+								"{{tikkie-base-create-url}}"
+							],
+							"path": [
+								"person"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find Person By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tikkie-base-find-by-id-url}}/person/75a22ea6-cdf5-49b5-9be7-c1d3102304b4",
+							"host": [
+								"{{tikkie-base-find-by-id-url}}"
+							],
+							"path": [
+								"person",
+								"75a22ea6-cdf5-49b5-9be7-c1d3102304b4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List All Persons",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tikkie-base-find-all-url}}/person",
+							"host": [
+								"{{tikkie-base-find-all-url}}"
+							],
+							"path": [
+								"person"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Person By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{tikkie-base-delete-by-id-url}}/person/75a22ea6-cdf5-49b5-9be7-c1d3102304b4",
+							"host": [
+								"{{tikkie-base-delete-by-id-url}}"
+							],
+							"path": [
+								"person",
+								"75a22ea6-cdf5-49b5-9be7-c1d3102304b4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

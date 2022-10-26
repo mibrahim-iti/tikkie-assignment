@@ -1,0 +1,27 @@
+/.idea**
+/tikkie-functions/target**
+/tikkie-functions/*.iml
+
+# CDK asset staging directory
+/infra-ts/.cdk.staging
+/infra-ts/cdk.out
+/infra-ts/cdk.out**
+/infra-ts/cdk.context.json
+
+/infra-ts/package-lock.json
+
+/infra-ts/node_modules
+
+/infra-ts/*.js
+/infra-ts/*.d.ts
+/infra-ts/!jest.config.js
+/infra-ts/lib/*.js
+/infra-ts/lib/*.d.ts
+/infra-ts/bin/*.js
+/infra-ts/bin/*.d.ts
+/infra-ts/configuration/*.js
+/infra-ts/configuration/*.d.ts
+/infra-ts/configuration/configs/*.js
+/infra-ts/configuration/configs/*.d.ts
+/infra-ts/test/*.js
+/infra-ts/test/*.d.ts
